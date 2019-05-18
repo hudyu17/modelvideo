@@ -1,0 +1,11 @@
+[{'id': 519299, 'fullName': 'Eric Sogard', 'firstName': 'Eric', 'lastName': 'Sogard', 'primaryNumber': '5', 'currentTeam': {'id': 141}, 'primaryPosition': {'code': '4', 'abbreviation': '2B'}, 'useName': 'Eric', 'boxscoreName': 'Sogard', 'nickName': 'Nerd Power', 'mlbDebutDate': '2010-09-14', 'nameFirstLast': 'Eric Sogard', 'firstLastName': 'Eric Sogard', 'lastFirstName': 'Sogard, Eric', 'lastInitName': 'Sogard, E', 'initLastName': 'E Sogard', 'fullFMLName': 'Eric Sidney Sogard', 'fullLFMName': 'Sogard, Eric Sidney'}]
+
+[{'id': 141, 'name': 'Toronto Blue Jays', 'teamCode': 'tor', 'fileCode': 'tor', 'teamName': 'Blue Jays', 'locationName': 'Toronto', 'shortName': 'Toronto'}]
+
+
+# error for name number, search "j", 18
+
+just j
+{'id': 595191, 'fullName': 'Jerad Eickhoff', 'firstName': 'Jerad', 'lastName': 'Eickhoff', 'primaryNumber': '48', 'currentTeam': {'id': 143}, 'primaryPosition': {'code': '1', 'abbreviation': 'P'}, 'useName': 'Jerad', 'boxscoreName': 'Eickhoff', 'nickName': 'Eick', 'mlbDebutDate': '2015-08-21', 'nameFirstLast': 'Jerad Eickhoff', 'firstLastName': 'Jerad Eickhoff', 'lastFirstName': 'Eickhoff, Jerad', 'lastInitName': 'Eickhoff, J', 'initLastName': 'J Eickhoff', 'fullFMLName': 'Jerad Joseph Eickhoff', 'fullLFMName': 'Eickhoff, Jerad Joseph'}
+{'id': 595939, 'fullName': 'Chris Ellis', 'firstName': 'Christopher', 'lastName': 'Ellis', 'currentTeam': {'id': 138}, 'primaryPosition': {'code': '1', 'abbreviation': 'P'}, 'useName': 'Chris', 'boxscoreName': 'Ellis', 'mlbDebutDate': '2019-03-31', 'nameFirstLast': 'Chris Ellis', 'firstLastName': 'Chris Ellis', 'lastFirstName': 'Ellis, Chris', 'lastInitName': 'Ellis, C', 'initLastName': 'C Ellis', 'fullFMLName': 'Christopher John Ellis', 'fullLFMName': 'Ellis, Christopher John'}
+stops after this, attribute error

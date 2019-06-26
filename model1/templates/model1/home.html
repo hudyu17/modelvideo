@@ -1,18 +1,31 @@
-blue jay database
+{% extends 'model1/base.html' %}
 
+{% block title %}
+Search
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="title">
+  <h1>MLB PLAYER SEARCH</h1>
+</div>
+
+<div class="container">
 <form class="form-signin" method='POST' action="{% url 'results' %}">
   {% csrf_token %}
   <div class="form-group">
-    <label for="exampleFormControlInput1">Name</label>
+    <label for="player_name">Player Name</label>
     <!-- {{ com.name }} -->
-    <input id="team_name" type="text" name="name_field" value="">
+    <input id="player_name" type="text" name="name_field" value="">
   <br>
-  	<label for="exampleFormControlInput1">Jersey Number</label>
-    <input id="team_name" type="text" name="number_field" value="">
+  	<label for="jersey_number">Jersey Number</label>
+    <input id="jersey_number" type="text" name="number_field" value="">
   <br>
-  	<label for="exampleFormControlInput1">Team Name</label>
+  	<label for="team_name">Team Name</label>
     <input id="team_name" type="text" name="team_field" value="">
   <br>
-  <div class="button"> <!-- idk why but this positions nicely -->
-    <button type="submit" class="btn btn-primary">Submit</button>
+  <br>
+  <button class='btn'>SEARCH</button>
 </form>
+</div>
+{% endblock %}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lustria&display=swap');
+
+body {
+	font-family: Roboto;
+	/*background-color: #E0E0E0;*/
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(https://4my3boyz.com/content/images/thumbs/0016227_mlb-baseball-all-team-licensed-logos-white-digital-cotton-fabric_500.jpeg) repeat;
+}
+
+
+.search_button{
+	margin-left: 11px;
+	padding: 10px;
+	background-color: grey;
+	border: 3px solid black;
+	color: white;
+	font-family: roboto;
+}
+
+.header h4 {
+	font-weight: bold;
+	font-size: x-large;
+	background-color: white;
+	padding: 35px;
+}
+
+.card {
+	padding: 35px;
+}
+
+.container h1 {
+	font-family: Kanit;
+	font-weight: bold;
+	font-size: 70px;
+	margin: 15px 0px 1px;
+}
+
+.container h2 {
+	font-family: Lustria;
+	font-style: italic;
+	font-size: 40px;	
+	margin: 15px 0px 0px;
+}
+
+a {
+	font-size: 20px;
+	font-family: Roboto;
+	font-weight: bold;
+}
+
+.container p {
+	font-size: x-large;
+}
+
+.card-img-top {
+	margin-left: auto;
+	margin-right: auto;
+    max-width: 100%;
+    border-style: double;
+    border-color: navy;
+    border-width: 5px;
+}
+
+.title h1{
+	text-align: center;
+	font-family: Kanit;
+	color: white;
+	background-color: black;
+	border: 3px solid black;
+	padding: 10px;
+}
+
+
+.form-signin{
+	font-weight: bold;
+}
+
+.form-group{
+	max-width: 400px;
+	margin: auto;
+	margin-top: 70px;
+	background-color: white;
+	padding: 30px;
+	border: 3px solid black;
+}
+
+
+.btn{
+  width: 100%;
+  color: black;
+}
+
+
+@media (max-width: 1000px) {
+	.container h1 {
+		font-family: Kanit;
+		font-weight: bold;
+		font-size: 55px;
+		margin: 10px 0px 1px;
+	}
+
+	.container h2 {
+		font-family: Lustria;
+		font-style: italic;
+		font-size: 30px;	
+		margin: 10px 0px 0px;
+	}
+
+	a {
+		font-size: 20px;
+		font-family: Roboto;
+		font-weight: bold;
+
+	.container p {
+	font-size: x-large;
+	}
+}

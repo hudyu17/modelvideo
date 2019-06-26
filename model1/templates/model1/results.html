@@ -1,18 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  {% load static %}
-  <link rel="stylesheet" type="text/css" href="{% static 'model1/style2.css' %}">
-</head>
-<body>
-  {% for player in com %}
-  <img src="https://securea.mlb.com/images/players/action_shots/{{ player.id }}.jpg" class="img-fluid" alt="Responsive image" alt="Toronto Skyline"> 
-  <img src="https://securea.mlb.com/mlb/images/players/head_shot/{{ player.id }}.jpg" class="img-fluid" alt="Responsive image">
-  <br><br>
-  Name: {{ player.fullName }}
-  {% endfor %}
+{% extends 'model1/base.html' %}
 
-</body>
-</html>
+{% block title %}
+Results
+{% endblock %}
+
+{% block content %}
+<br>
+<a class="search_button" href="{% url 'home' %}">BACK TO SEARCH</a>
+
+<div class="container">
+
+	<div class="header">
+		<h4>SEARCH RESULTS:</h4>
+	</div>
+
+	<div class="card-deck">
+		{% for player in com %}
+		<div class="card">
+			<img class="card-img-top" src="https://securea.mlb.com/images/players/action_shots/{{ player.id }}.jpg" alt="No Image Found">
+			<div class="card-body">
+				<h1>{{ player.fullName }} #{{ player.primaryNumber }}</h1>
+				<h2>{{ player.teamName }}</h2>
+				<br>
+				<a class="mlb_link" href="https://www.mlb.com/player/{{ player.useName }}-{{ player.lastName }}-{{ player.id }}">{{player.fullName}}: MLB.com profile</a>
+			</div>
+			<br>
+			
+		</div>
+		{% empty %}
+			<h1>No Player Found</h1>
+	  	{% endfor %}
+	</div>
+</div>
+
+{% endblock %}

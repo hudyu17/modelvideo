@@ -25,7 +25,7 @@ SECRET_KEY = '_ecljx202fwlq+0-26r5ke&r-wncnq9!&rz+vg4(t4lh9o6&#l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [https://mlbsearch.herokuapp.com/]
+ALLOWED_HOSTS = [mlbsearch.herokuapp.com]
 
 
 # Application definition

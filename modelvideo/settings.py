@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_ecljx202fwlq+0-26r5ke&r-wncnq9!&rz+vg4(t4lh9o6&#l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False 
 
-ALLOWED_HOSTS = ['mlbsearch.herokuapp.com']
+ALLOWED_HOSTS = ['mlbsearch.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -126,14 +126,14 @@ PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 
-# Extra lookup directories for collectstatic to find static files
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-)
+# # Extra lookup directories for collectstatic to find static files
+# STATICFILES_DIRS = (
+#     os.path.join(PROJECT_ROOT, 'static'),
+# )
 
-#  Add configuration for static files storage using whitenoise
-STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
+# #  Add configuration for static files storage using whitenoise
+# STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
 
-import dj_database_url 
-prod_db  =  dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(prod_db)
+# import dj_database_url 
+# prod_db  =  dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(prod_db)

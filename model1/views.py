@@ -12,7 +12,7 @@ def results(request):
 
 	if request.method == 'POST':
 
-		r = statsapi.lookup_player(request.POST.get("name_field")) # search by name first
+		r = statsapi.lookup_player(request.POST.get("name_field"), season=2019) # search by name first
 		# returns a list - if so, can work in r[0] for succ contexts
 
 		# case 1: all 3 provided
@@ -56,7 +56,6 @@ def results(request):
 		# case 3: name only 
 		elif (request.POST.get("name_field") != '' and request.POST.get("number_field") == ''\
 		and request.POST.get("team_field") == ''):
-			print(r)
 			if len(r) != 0:   # multiple players
 				context = {'com': r}
 			# elif len(r) > 1:  # more than 1 player 

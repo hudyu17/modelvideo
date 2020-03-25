@@ -6,3 +6,4 @@ Link to final product: https://mlbsearch.herokuapp.com/
 - List of matching player(s) will be returned; "No Player Found" if information is conflicting or no information is empty
 
 Used MLBStats API: https://github.com/toddrob99/MLB-StatsAPI
+

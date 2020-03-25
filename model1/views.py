@@ -120,7 +120,7 @@ def results(request):
 		elif (request.POST.get("name_field") == '' and request.POST.get("number_field") != ''\
 		and request.POST.get("team_field") == ''):
 			num = request.POST.get("number_field")
-			number_list_dict = statsapi.lookup_player(num)
+			number_list_dict = statsapi.lookup_player(num, season=2019)
 			players = []
 
 			for player in number_list_dict:
@@ -143,7 +143,7 @@ def results(request):
 		and request.POST.get("team_field") != ''):
 			
 			num = request.POST.get("number_field")
-			number_list_dict = statsapi.lookup_player(num)
+			number_list_dict = statsapi.lookup_player(num, season=2019)
 
 			team = request.POST.get("team_field")
 			team_list_dict = statsapi.lookup_team(team)
@@ -199,7 +199,7 @@ def results(request):
 				players = []
 				for team in team_list_dict:
 					team_id = team['id']
-					all_players = statsapi.lookup_player(team_id)
+					all_players = statsapi.lookup_player(team_id, season=2019)
 					
 					for player in all_players:
 						if player['currentTeam']['id'] == team_id:
